@@ -1,11 +1,24 @@
 
-p  {
+.myname  {
 
-background-color: blueviolet;
+background-color: rgb(43, 153, 226);
 color: black;
 border: groove;
 display: inline-block;  
 
+}
+
+.exp {
+  background: #ff9999 ;
+  padding: 20px;
+font-size: large;
+font-style: italic;
+
+}
+
+.exp1{
+  background:#ffe5e5;
+  margin: 5px;  
 
 }
 
@@ -17,8 +30,29 @@ footer {
     color: white;
     background-color: black;
     text-align: center;
+    
   }
-  
+
+   .favourite {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333; 
+    }
+    
+  .ol-li {
+    width:550px;
+    height:35px;
+    font-family:Trajan Pro;
+    font-size:18px;
+    text-align:center;
+    font-weight:bold;
+    text-shadow:3px 2px 3px #333333;
+    margin-left:1010px;
+    position:absolute;
+    top:150px;
+  }
 
   .left_items {
     list-style-type: none;
