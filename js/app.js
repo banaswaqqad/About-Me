@@ -8,7 +8,7 @@ while(!userName)
     userName=prompt('you are not allow to leave this empty');
 }
 
-alert('hello' + userName + '  you are welcome to our website')
+alert('hello' + userName + '  you are welcome to our website');
 
 
 
@@ -18,7 +18,7 @@ if ( she_he.toLowerCase() ==='no' || she_he.toLowerCase() ==='n' )
     alert('Bravoo your answer is true');
 
 console.log('your answer was' + ' ' + she_he);
-score++;
+score=score+1;
 }
 
 else
@@ -34,7 +34,7 @@ if(age.toLowerCase() ==='no' || age.toLowerCase()==='n')
     alert('Bravoo your answer is true ');
 
 console.log('your answer was' + ' ' + age);
-score++;
+score=score+1;
 }
 else
 {
@@ -47,7 +47,7 @@ if(country.toLowerCase() ==='yes' || country.toLowerCase()==='y')
     alert('Bravoo your answer is true');
 
 console.log('your answer was' + ' ' + country);
-score++;
+score=score+1;
 }
 else
 {
@@ -61,7 +61,7 @@ if(major.toLowerCase() ==='yes' || major.toLowerCase() ==='y')
     alert('Bravoo your answer is true ');
 
 console.log('your answer was' + ' ' + major);
-score++;
+score=score+1;
 }
 
 else
@@ -75,7 +75,7 @@ if(opinion.toLowerCase()==='yes' || opinion.toLowerCase()==='y')
     alert('Bravoo your answer is true ');
 
 console.log('your answer was' + ' ' + opinion);
-score++;
+score=score+1;
 }
 else
 {
@@ -84,55 +84,51 @@ else
 
 
 
-
-let attempts=3;
 let theNumber=45;
-let guessNumber = prompt('try to guess number');
-let x =0;
-while(x<attempts)
-{
-    if(x>attempts)
+let guessingNumber;
+let attempts =0
+let a =0;
+do {
+    guessingNumber= prompt(' how about trying to guess number');
+
+    if(guessingNumber==theNumber)
     {
-        alert ('bye')
+        console.log('your answer is correct ');
+        alert('your answer is correct , Bravoooooooooooo ');
+        score=score+1
+        a=1;
+        
+        
+    }
+    else 
+
+    if(guessingNumber<theNumber)
+    {
+        console.log('your answer is low,try again you have' + attempts + 'else' );
+        alert('your answer is too low ');
+        attempts+=1;
+    }
+    
+    else 
+
+    if(guessingNumber>theNumber){
+        console.log('your answer is high ');
+        alert('your answer is too high');
+        attempts+=1
     }
 
-if (guessNumber >theNumber )
-{
-alert('to high');
-guessNumber = prompt('try to guess number');
-
-x++
-if(x>attempts)
-{
-    alert ('bye')
+    else
+    {
+   alert('please enter number');
+   attempts+=1;
+    }
+    if(attempts===4){
+        console.log('you are run out of the attempts  ');
+        alert(' you are run out of the attempts the answer is ' + ' '+  theNumber);
+        a=1;
 }
-
 }
-else 
-if (guessNumber<theNumber)
-{ 
-    alert('too small')
-    guessNumber = prompt('try to guess number');
-
-x++;
-if(x>attempts)
-{
-    alert ('bye')
-}
-
-}
-else 
-
-if(guessNumber===theNumber)
-{
-    alert('bravo');
-    i>4;
-}
-
-}
-
-
-
+while(a===0);
 
 
 
@@ -156,13 +152,12 @@ i++
 }
 if(i==6)
 {
-    alert ('sorry, you are out of the attempts,these are my favourite cars' ) 
+    alert ('sorry, you are out of the attempts,these are my favourite cars' ) ;
 for(let i =0;i<cars.length;i++)
 {
 alert(cars[i] );
 }
 
-}
- 
-}
-alert('your score is ' + score  )
+}};
+
+  alert('your score is '  + score);
