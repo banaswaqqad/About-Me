@@ -9,11 +9,8 @@ while(!userName)
 }
 
 alert('hello' + userName + '  you are welcome to our website');
-
-
 let she_he = prompt('do you think i am male ?');
 no(she_he);
-
 let age = prompt('do you think i am over 30 ?');
 no(age);
 let country = prompt('Do you think that I live in an Arab country?');
@@ -22,8 +19,6 @@ let major = prompt('Do you think that I studied a major relate to information te
 yes(major);
 let opinion = prompt('do you think i enjoy building websites');
 yes(opinion);
-
-
 function no(answer)
 {
     let answerF=answer;
@@ -60,14 +55,6 @@ else
     alert('SORRY YOUR ANSWER WAS WRONG');
 }
 }
-
-
-
-
-
-
-
-
 
 //==============================================================
 
